@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:paddingBottom="80dp"
+    android:paddingTop="40dp"
+    tools:context=".request_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+        <TextView
+            android:id="@+id/text_request_form_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="REQUEST FORM"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_patient_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="8dp"
+            android:text="Patient Information"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Male"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:padding="8dp"
+                android:id="@+id/radio_button_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Female"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edit_text_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_symptoms_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Symptoms Information"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_symptoms_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Describe your symptoms"
+            android:inputType="textMultiLine"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_delivery_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Delivery Information"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_street_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Street Address"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="City"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="State"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Pincode"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_additional_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Additional Information"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_special_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Special Instructions/Notes"
+            android:inputType="text"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:background="@drawable/button_background"
+            android:id="@+id/button_submit"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>

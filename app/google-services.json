@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "181869185482",
+    "project_id": "doctorporjectsemiii",
+    "storage_bucket": "doctorporjectsemiii.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181869185482:android:508c13284c50bd12d1a733",
+        "android_client_info": {
+          "package_name": "com.petrol.petrol_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2pi5RQTRiNTCw3vPUt6QU7TuukeCS240"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
