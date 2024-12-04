@@ -14,7 +14,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cleaning Products"
+        android:text="Cleaning and Care Products"
         android:textColor="@color/primary"
         android:textSize="24sp"
         android:padding="16dp"
@@ -55,7 +55,7 @@
                         android:id="@+id/product_image_1"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/car_wax"
+                        android:src="@drawable/anti"
                         android:contentDescription="Car Wax Image"/>
 
                     <LinearLayout
@@ -71,7 +71,7 @@
                             android:id="@+id/product_name_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Car Wax"
+                            android:text="Anti-Bacterial"
                             android:textSize="18sp"/>
 
                         <TextView
@@ -224,7 +224,7 @@
                             android:id="@+id/product_name_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tire Cleaner"
+                            android:text="Cleaner"
                             android:textSize="18sp"/>
 
                         <TextView

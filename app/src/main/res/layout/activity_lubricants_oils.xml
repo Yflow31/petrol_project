@@ -15,7 +15,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lubricants and Oils"
+        android:text="Surgical Instruments"
         android:textSize="24sp"
         android:padding="16dp"
         android:gravity="center"
@@ -54,7 +54,7 @@
                         android:id="@+id/product_image_1"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/engine_oil"
+                        android:src="@drawable/forcep"
                         android:contentDescription="Engine Oil"/>
 
                     <LinearLayout
@@ -70,7 +70,7 @@
                             android:id="@+id/product_name_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Engine Oil"
+                            android:text="Forcep"
                             android:textSize="18sp"/>
 
                         <TextView
@@ -105,7 +105,7 @@
                         android:id="@+id/product_image_2"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/brake_fluid"
+                        android:src="@drawable/scissors"
                         android:contentDescription="Brake Fluid"/>
 
                     <LinearLayout
@@ -121,7 +121,7 @@
                             android:id="@+id/product_name_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Brake Fluid"
+                            android:text="Scissor"
                             android:textSize="18sp"/>
 
                         <TextView
@@ -156,7 +156,7 @@
                         android:id="@+id/product_image_3"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/transmission_fluid"
+                        android:src="@drawable/ear_cleaner"
                         android:contentDescription="Transmission Fluid"/>
 
                     <LinearLayout
@@ -172,7 +172,7 @@
                             android:id="@+id/product_name_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Transmission Fluid"
+                            android:text="Ear Cleaner"
                             android:textSize="18sp"/>
 
                         <TextView
@@ -207,7 +207,7 @@
                         android:id="@+id/product_image_4"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/coolant"
+                        android:src="@drawable/injection"
                         android:contentDescription="Coolant"/>
 
                     <LinearLayout
@@ -223,7 +223,7 @@
                             android:id="@+id/product_name_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Coolant"
+                            android:text="Injection"
                             android:textSize="18sp"/>
 
                         <TextView
