@@ -20,9 +20,10 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Name " />
+                android:text="Doctor Name " />
 
             <TextView
                 android:id="@+id/patient_name"
@@ -38,6 +39,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Time :" />
@@ -56,6 +58,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date :" />
@@ -74,25 +77,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Street Address :" />
-
-            <TextView
-                android:id="@+id/patient_address"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jetta" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Additional Notes :" />
@@ -104,6 +89,29 @@
                 android:text="Come Fast" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :" />
+
+            <TextView
+                android:id="@+id/patient_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="Jetta" />
+
+        </LinearLayout>
+
+
+
 
 
     </LinearLayout>

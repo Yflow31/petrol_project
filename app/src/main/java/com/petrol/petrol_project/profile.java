@@ -5,6 +5,7 @@ import static android.content.ContentValues.TAG;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -30,6 +31,8 @@ public class profile extends AppCompatActivity {
     // Initialize Firebase Firestore instance
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+    Button modify_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +44,8 @@ public class profile extends AppCompatActivity {
         tvEmail = findViewById(R.id.tvEmail);
         tvPhone = findViewById(R.id.tvPhone);
         currentUser = auth.getCurrentUser();
+
+        modify_btn = findViewById(R.id.modify_btn);
 
         if (currentUser == null) {
             Intent intent = new Intent(profile.this, MainActivity.class);

@@ -47,7 +47,7 @@
                     android:id="@+id/product_image_1"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/cng_01"
+                    android:src="@drawable/medicine"
                     android:contentDescription="Product Image 1"/>
 
                 <LinearLayout
@@ -98,7 +98,7 @@
                     android:id="@+id/product_image_2"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/cng_01"
+                    android:src="@drawable/medicine"
                     android:contentDescription="Product Image 2"/>
 
                 <LinearLayout
@@ -149,7 +149,7 @@
                     android:id="@+id/product_image_3"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/cng_01"
+                    android:src="@drawable/medicine"
                     android:contentDescription="Product Image 3"/>
 
                 <LinearLayout
@@ -200,7 +200,7 @@
                     android:id="@+id/product_image_4"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/cng_01"
+                    android:src="@drawable/medicine"
                     android:contentDescription="Product Image 4"/>
 
                 <LinearLayout

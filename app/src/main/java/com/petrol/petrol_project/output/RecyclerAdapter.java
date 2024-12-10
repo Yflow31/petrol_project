@@ -10,15 +10,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.petrol.petrol_project.R;
+import com.petrol.petrol_project.alldoctors.Appointment;
 
 import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
-    ArrayList<Output> arrayList;
+    ArrayList<Appointment> arrayList;
 
     Context context;
 
-    public RecyclerAdapter(ArrayList<Output> arrayList, Context context) {
+    public RecyclerAdapter(ArrayList<Appointment> arrayList, Context context) {
         this.arrayList = arrayList;
         this.context = context;
     }
@@ -32,13 +33,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.ViewHolder holder, int position) {
-        Output output = arrayList.get(position);
-
-        holder.patient_name.setText(output.getFullName());
+        Appointment output = arrayList.get(position);
+        holder.patient_name.setText(output.getDoctorname());
         holder.cdtime.setText(output.getTime());
         holder.cddate.setText(output.getDate());
-        holder.patient_address.setText(output.getStreetAddress());
-        holder.add_notes_txt.setText(output.getAdditionalNotes());
+        holder.patient_address.setText(output.getAddressDetail());
+        holder.add_notes_txt.setText("Emergency");
     }
 
 

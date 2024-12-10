@@ -30,6 +30,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.petrol.petrol_project.alldoctors.Appointment;
 import com.petrol.petrol_project.output.Output;
 import com.petrol.petrol_project.output.RecyclerAdapter;
 import com.petrol.petrol_project.product_page.productpage;
@@ -43,11 +44,11 @@ import java.util.Locale;
 public class petrol_homepage extends AppCompatActivity {
 
     ImageButton img1, img2, img3,profile_btn,logout_btn;
-    Button ex_btn;
+    Button ex_btn,emergency;
     TextView req_txt;
 
     RecyclerView oprecycler_view;
-    ArrayList<Output> outputArrayList;
+    ArrayList<Appointment> outputArrayList;
     RecyclerAdapter recyclerAdapter;
     FirebaseFirestore db ;
 
@@ -73,6 +74,7 @@ public class petrol_homepage extends AppCompatActivity {
         img3 = findViewById(R.id.img3);
         profile_btn = findViewById(R.id.profile_btn);
         logout_btn = findViewById(R.id.logout_btn);
+        emergency = findViewById(R.id.emergency);
 
         ex_btn = findViewById(R.id.ex_btn);
         req_txt = findViewById(R.id.req_txt);
@@ -120,7 +122,7 @@ public class petrol_homepage extends AppCompatActivity {
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
                     if (task.isSuccessful()) {
                         for (QueryDocumentSnapshot document : task.getResult()) {
-                            Output output = document.toObject(Output.class);
+                            Appointment output = document.toObject(Appointment.class);
                             outputArrayList.add(output);
                         }
                         recyclerAdapter.notifyDataSetChanged(); // Notify the adapter about data changes
@@ -141,7 +143,7 @@ public class petrol_homepage extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     outputArrayList.clear();
                     for (QueryDocumentSnapshot document : task.getResult()) {
-                        Output output = document.toObject(Output.class);
+                        Appointment output = document.toObject(Appointment.class);
                         outputArrayList.add(output);
                     }
                     recyclerAdapter.notifyDataSetChanged();  // Notify the adapter about data changes
@@ -206,6 +208,14 @@ public class petrol_homepage extends AppCompatActivity {
                 Intent intent = new Intent(petrol_homepage.this, MainActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        emergency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(petrol_homepage.this, Emergency_Doctors.class);
+                startActivity(intent);
             }
         });
 

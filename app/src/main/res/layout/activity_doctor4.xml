@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alldoctors.Doctor4">
+
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/doctor4"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recipeImage"
+        android:layout_marginBottom="70dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/recipeImage"
+            android:elevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:padding="26dp">
+
+                <TextView
+                    android:id="@+id/tv_doctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Hitesh Patel"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_doctorName"
+                    android:layout_marginBottom="4dp"
+                    android:text="Senior Consultant General Physician"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_designation"
+                    android:layout_marginBottom="16dp"
+                    android:text="+91-9876543211"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_addressDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="textMultiLine"
+                    android:paddingTop="8dp"
+                    android:text="456, Sapphire Lane, Sector 22, Ahmedabad, Gujarat, India"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/demoDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_addressDetail"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_DescriptionDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/demoDescription"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="textMultiLine"
+                    android:paddingTop="8dp"
+                    android:text="Dr. Hitesh Patel is a highly skilled general physician with 19 years of experience in providing exceptional medical care. He is well-versed in diagnosing complex conditions and offering personalized treatment plans for his patients. Dr. Patel focuses on preventive medicine and chronic disease management."
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/patient_address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_DescriptionDetail"
+                    android:text="Patient Address"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/patient_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_below="@id/patient_address1"
+                    android:layout_marginBottom="60dp"
+                    android:hint="Your Address" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_background_emergency"
+                android:text="Book Appointment" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</RelativeLayout>

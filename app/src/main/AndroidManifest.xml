@@ -15,6 +15,24 @@
         android:theme="@style/Theme.Petrol_project"
         tools:targetApi="31">
         <activity
+            android:name=".alldoctors.Doctor5"
+            android:exported="false" />
+        <activity
+            android:name=".alldoctors.Doctor4"
+            android:exported="false" />
+        <activity
+            android:name=".alldoctors.Doctor3"
+            android:exported="false" />
+        <activity
+            android:name=".alldoctors.Doctor2"
+            android:exported="false" />
+        <activity
+            android:name=".alldoctors.Doctor1"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency_Doctors"
+            android:exported="false" />
+        <activity
             android:name=".welcome_page"
             android:exported="true">
             <intent-filter>
@@ -55,8 +73,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

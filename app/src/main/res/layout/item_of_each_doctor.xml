@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/main_page_item_image"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/main_page_item_text"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/main_page_item_image"
+            android:text="Doctor Name" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_below="@+id/main_page_item_text"
+            android:id="@+id/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/main_page_item_image"
+            android:text="Neurologist" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
